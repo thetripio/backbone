@@ -1,22 +1,26 @@
 <html>
   <head>
-    <title>Embark - SimpleStorage Demo</title>
+    <title>Tripio - the travel blockchain</title>
     <link rel="stylesheet" href="css/app.css">
     <script src="js/app.js"></script>
   </head>
   <body class="container">
-    <h3>Embark - Usage Example</h3>
+    <h3>Tripio - the travel blockchain</h3>
 
     <ul class="nav nav-tabs" role="tablist" id="myTabs">
-      <li role="presentation" class="active"><a href="#blockchain" aria-controls="blockchain" role="tab" data-toggle="tab">Blockchain</a></li>
+      <li role="presentation" class="active"><a href="#blockchain" aria-controls="blockchain" role="tab" data-toggle="tab">Inventory</a></li>
+      <li role="presentation"><a href="#contracts" aria-controls="contracts" role="tab" data-toggle="tab">Booking</a></li>
       <li role="presentation"><a href="#storage" aria-controls="storage" role="tab" data-toggle="tab">Decentralized Storage (IPFS)<span class="pull-right" id="status-storage"></a></li>
       <li role="presentation"><a href="#communication" aria-controls="communication" role="tab" data-toggle="tab">P2P communication (Whisper/Orbit)<span class="pull-right" id="status-communication"></span></a></li>
     </ul>
 
     <div class="tab-content">
       <div role="tabpanel" class="tab-pane active" id="blockchain">
-        <h3> 1. Set the value in the blockchain</h3>
+        <h3> Room Listing</h3>
         <div class="form-group form-inline">
+            <div>
+                current value is <span class="value"></span>
+              </div>
           <input type="text" class="text form-control" value="10">
           <button class="set btn btn-primary">Set Value</button>
           <p>Once you set the value, the transaction will need to be mined and then the value will be updated on the blockchain.</p>
@@ -39,15 +43,7 @@
       <div role="tabpanel" class="tab-pane" id="storage">
         <div class="error alert alert-danger" role="alert">The node you are using does not support IPFS. Please ensure <a href="https://github.com/ipfs/js-ipfs-api#cors" target="_blank">CORS</a> is setup for the IPFS node.</div>
         <div id="storage-controls">
-
-        <h3>Save text to IPFS</h3>
-        <div class="form-group form-inline">
-          <input type="text" class="ipfsText text form-control" value="hello world!">
-          <button class="setIpfsText btn btn-primary">Save</button>
-          <p>generated Hash: <span class="textHash"></span></p>
-        </div>
-
-        <h3>Load text from IPFS given an hash</h3>
+        <h3>Load Property from IPFS given an hash</h3>
         <div class="form-group form-inline">
           <input type="text" class="textHash text form-control" size="60">
           <button class="loadIpfsHash set btn btn-primary">Load</button>
