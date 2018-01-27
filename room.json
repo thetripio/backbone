@@ -1,10 +1,9 @@
 {
     "name": "Beijing hotel",
     "address": {
-        "line_1": "123 Changan St",
-        "line_2": "Apt A",
+        "line": "123 Changan St",
         "city": "Beijing",
-        "country_code": "CN"
+        "countryCode": "CN"
     },
     "ratings": 8291,
     "location": {
@@ -13,6 +12,11 @@
             "longitude": -93.26838
         }
     },
+    "deposit": {
+        "required": true,
+        "currency": "TRIO",
+        "amount": 1000,
+    },
     "phone": "+861028372618",
     "currencies": ["TRIO", "ETH", "Litecoine"],
     "rooms": {
@@ -20,10 +24,7 @@
             "id": "224829",
             "wifi": true,
             "freeBreakfast": true,
-            "name": "Single Room",
-            "descriptions": {
-                "overview": "<strong>2 Twin Beds</strong><br />269-sq-foot (25-sq-meter) room with mountain views<br /><br /><b>Internet</b> - Free WiFi <br /> <b>Entertainment</b> - Flat-screen TV with cable channels<br /><b>Food & Drink</b> - Refrigerator, coffee/tea maker,  room service, and free bottled water<br /><b>Sleep</b> - Premium bedding <br /><b>Bathroom</b> - Private bathroom, shower, bathrobes, and free toiletries<br /><b>Practical</b> - Safe and desk; cribs/infant beds available on request<br /><b>Comfort</b> - Climate-controlled air conditioning and daily housekeeping<br />Non-Smoking<br />"
-            }
+            "name": "Single Room"
         }
     }
 }

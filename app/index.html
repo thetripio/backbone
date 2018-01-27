@@ -43,27 +43,15 @@
       <div role="tabpanel" class="tab-pane" id="storage">
         <div class="error alert alert-danger" role="alert">The node you are using does not support IPFS. Please ensure <a href="https://github.com/ipfs/js-ipfs-api#cors" target="_blank">CORS</a> is setup for the IPFS node.</div>
         <div id="storage-controls">
-        <h3>Load Property from IPFS given an hash</h3>
+
+
+        <h3>Load property from IPFS given an hash</h3>
         <div class="form-group form-inline">
           <input type="text" class="textHash text form-control" size="60">
           <button class="loadIpfsHash set btn btn-primary">Load</button>
           <p>result: <span class="ipfsText"></span></p>
         </div>
 
-        <h3>upload file to ipfs</h3>
-        <div class="form-group form-inline">
-          <input type="file" class="form-control">
-          <button class="uploadFile set btn btn-primary">upload</button>
-          <p>generated hash: <span class="fileIpfsHash"></span></p>
-        </div>
-
-        <h3>Get file or image from ipfs</h3>
-        <div class="form-group form-inline">
-          <input type="text" class="fileIpfsHash form-control" size="60">
-          <button class="loadIpfsFile set btn btn-primary">Load</button>
-          <p>file available at: <span class="ipfsFileUrl"></span></p>
-          <p><img class="ipfsImage" src=""></p>
-        </div>
 
         <p>Javascript calls being made: </p>
         <div class="logs">
